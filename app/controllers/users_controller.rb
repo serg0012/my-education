@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class UsersController < ActionController::Base
-	def index
-		@users = User.all
+  def index
+    @users = User.all
   end
 
   def new
