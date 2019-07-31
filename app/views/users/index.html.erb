@@ -1,0 +1,17 @@
+<table border="1">
+	<caption>Список пользователей</caption>
+	<tr>
+		<th> user id </th>
+		<th> user email </th>
+		<th> user first name </th>
+	    <th> user last name </th>
+	</tr>
+	<% @users.each do |user| %>
+	<tr>
+	    <td><%= user.id %></td>
+	    <td><%= user.email %></td>
+		<td><%= user.first_name %></td>
+	    <td><%= user.last_name %></td>
+		</tr>
+	<% end %>
+</table>
